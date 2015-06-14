@@ -7,7 +7,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        LoginBean lb = new LoginBean();
 
 
         Reader r1 = new Reader("login", "password");
@@ -18,7 +17,7 @@ public class Main {
         w.registerObserver(r2);
 
 
-        r1.getSubscribedTopics().add("sport");
+       // r1.getSubscribedTopics().add("sport");
 
 
         News n = new News("jeden", "dwa", "sport");

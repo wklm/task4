@@ -19,14 +19,15 @@ public class Reader implements Observer, Serializable, User {
     Reader(String login, String password) {
         this.account = new Account(login, password);
     }
-    ArrayList<String> subscribedTopics = new ArrayList<>();
     ArrayList<News> newsList = new ArrayList<>();
+    ChooseTopics topics;
+    ArrayList<Topic> subscribedTopics;
 
     @Override
     public void update(Observable o, Object news) {
         News n = (News)news;
-        for (String s : getSubscribedTopics())
-            if (s.equals(n.getTopic()))
+        for (Topic t : getSubscribedTopics())
+            if (t.equals(n.getTopic()))
                 newsList.add(n);
     }
 
@@ -36,21 +37,27 @@ public class Reader implements Observer, Serializable, User {
     public void setAccount(Account account) {
         this.account = account;
     }
-
-    public ArrayList<String> getSubscribedTopics() {
-        return subscribedTopics;
-    }
-
-    public void setSubscribedTopics(ArrayList<String> subscribedTopics) {
-        this.subscribedTopics = subscribedTopics;
-    }
     public ArrayList<News> getNewsList() {
         return newsList;
     }
-
     public void setNewsList(ArrayList<News> newsList) {
         this.newsList = newsList;
     }
+    public ChooseTopics getTopics() {
+        return topics;
+    }
 
-    public Reader (){}
+    public void setTopics(ChooseTopics topics) {
+        this.topics = topics;
+    }
+
+
+    public ArrayList<Topic> getSubscribedTopics() {
+        return subscribedTopics;
+    }
+
+    public void setSubscribedTopics(ArrayList<Topic> subscribedTopics) {
+        this.subscribedTopics = subscribedTopics;
+    }
+
 }

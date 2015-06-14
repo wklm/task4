@@ -1,0 +1,624 @@
+2015-06-14 20:05:58,841 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-06-14 20:05:59,584 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-06-14 20:05:59,679 INFO  [org.jboss.as] (MSC service thread 1-5) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-06-14 20:05:59,687 DEBUG [org.jboss.as.config] (MSC service thread 1-5) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = E:\Program Files\Java\jdk1.8.0_31\jre\lib\endorsed
+	java.ext.dirs = E:\Program Files\Java\jdk1.8.0_31\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+	java.home = E:\Program Files\Java\jdk1.8.0_31\jre
+	java.io.tmpdir = C:\Users\WOJTE_~1\AppData\Local\Temp\
+	java.library.path = E:\Program Files\Java\jdk1.8.0_31\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\mvn\bin;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_31-b13
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_31
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.31-b07
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final
+	jboss.host.name = dell
+	jboss.modules.dir = C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\modules
+	jboss.node.name = dell
+	jboss.qualified.host.name = dell
+	jboss.server.base.dir = C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\standalone\log
+	jboss.server.name = dell
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\modules
+	org.jboss.boot.log.file = C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 8.1
+	os.version = 6.3
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.class.path = E:\Program Files\Java\jdk1.8.0_31\jre\lib\resources.jar;E:\Program Files\Java\jdk1.8.0_31\jre\lib\rt.jar;E:\Program Files\Java\jdk1.8.0_31\jre\lib\sunrsasign.jar;E:\Program Files\Java\jdk1.8.0_31\jre\lib\jsse.jar;E:\Program Files\Java\jdk1.8.0_31\jre\lib\jce.jar;E:\Program Files\Java\jdk1.8.0_31\jre\lib\charsets.jar;E:\Program Files\Java\jdk1.8.0_31\jre\lib\jfr.jar;E:\Program Files\Java\jdk1.8.0_31\jre\classes
+	sun.boot.library.path = E:\Program Files\Java\jdk1.8.0_31\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\jboss-modules.jar -mp C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = US
+	user.dir = C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4
+	user.home = C:\Users\wojte_000
+	user.language = en
+	user.name = wojte_000
+	user.script = 
+	user.timezone = Europe/Berlin
+	user.variant = 
+2015-06-14 20:05:59,689 DEBUG [org.jboss.as.config] (MSC service thread 1-5) VM Arguments: -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Dorg.jboss.boot.log.file=C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final/standalone/log/server.log -Dlogging.configuration=file:C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final/standalone/configuration/logging.properties 
+2015-06-14 20:06:03,370 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-06-14 20:06:03,395 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.3.0.Final
+2015-06-14 20:06:03,416 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.3.0.Final
+2015-06-14 20:06:03,458 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2015-06-14 20:06:03,464 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-06-14 20:06:03,473 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2015-06-14 20:06:03,485 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-06-14 20:06:03,493 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2015-06-14 20:06:03,497 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2015-06-14 20:06:03,508 INFO  [org.jboss.as.security] (MSC service thread 1-1) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-06-14 20:06:03,540 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017502: Undertow 1.1.0.Final starting
+2015-06-14 20:06:03,541 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
+2015-06-14 20:06:03,545 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2015-06-14 20:06:03,693 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-06-14 20:06:03,740 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-1) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-06-14 20:06:03,742 INFO  [org.jboss.as.naming] (MSC service thread 1-1) JBAS011802: Starting Naming Service
+2015-06-14 20:06:03,747 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-06-14 20:06:03,782 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) JBAS010417: Started Driver service with driver-name = h2
+2015-06-14 20:06:04,695 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final/welcome-content
+2015-06-14 20:06:05,073 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017525: Started server default-server.
+2015-06-14 20:06:05,090 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 4.0.6.Final
+2015-06-14 20:06:05,094 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017531: Host default-host starting
+2015-06-14 20:06:05,238 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) JBAS015012: Started FileSystemDeploymentService for directory C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\standalone\deployments
+2015-06-14 20:06:05,516 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017519: Undertow HTTP listener default listening on /127.0.0.1:8080
+2015-06-14 20:06:05,857 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-06-14 20:06:07,212 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-06-14 20:06:07,450 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+2015-06-14 20:06:07,451 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+2015-06-14 20:06:07,451 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 9273ms - Started 184 of 234 services (82 services are lazy, passive or on-demand)
+2015-06-14 20:06:09,251 INFO  [org.jboss.as.repository] (management-handler-thread - 4) JBAS014900: Content added at location C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\standalone\data\content\a8\6499286dba868e31085db06543959f413825cf\content
+2015-06-14 20:06:09,296 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "task4.war" (runtime-name: "task4.war")
+2015-06-14 20:06:11,698 INFO  [org.jboss.as.jpa] (MSC service thread 1-8) JBAS011401: Read persistence.xml for task4
+2015-06-14 20:06:11,889 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 50) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'task4.war#task4'
+2015-06-14 20:06:11,907 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 50) HHH000204: Processing PersistenceUnitInfo [
+	name: task4
+	...]
+2015-06-14 20:06:12,041 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 50) HHH000412: Hibernate Core {4.3.7.Final}
+2015-06-14 20:06:12,048 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 50) HHH000206: hibernate.properties not found
+2015-06-14 20:06:12,051 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 50) HHH000021: Bytecode provider name : javassist
+2015-06-14 20:06:12,286 ERROR [org.jboss.as.jsf] (MSC service thread 1-8) JBAS012611: JSF managed bean class Reader has no default constructor
+2015-06-14 20:06:12,392 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) JBAS016002: Processing weld deployment task4.war
+2015-06-14 20:06:12,501 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-8) HV000001: Hibernate Validator 5.1.3.Final
+2015-06-14 20:06:12,616 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named UserRepo in deployment unit deployment "task4.war" are as follows:
+
+	java:global/task4/UserRepo!UserRepo
+	java:app/task4/UserRepo!UserRepo
+	java:module/UserRepo!UserRepo
+	java:global/task4/UserRepo
+	java:app/task4/UserRepo
+	java:module/UserRepo
+
+2015-06-14 20:06:12,618 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named LoginBean in deployment unit deployment "task4.war" are as follows:
+
+	java:global/task4/LoginBean!LoginBean
+	java:app/task4/LoginBean!LoginBean
+	java:module/LoginBean!LoginBean
+	java:global/task4/LoginBean
+	java:app/task4/LoginBean
+	java:module/LoginBean
+
+2015-06-14 20:06:12,619 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named NewsRepo in deployment unit deployment "task4.war" are as follows:
+
+	java:global/task4/NewsRepo!NewsRepo
+	java:app/task4/NewsRepo!NewsRepo
+	java:module/NewsRepo!NewsRepo
+	java:global/task4/NewsRepo
+	java:app/task4/NewsRepo
+	java:module/NewsRepo
+
+2015-06-14 20:06:13,792 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) JBAS016005: Starting Services for CDI deployment: task4.war
+2015-06-14 20:06:13,842 INFO  [org.jboss.weld.Version] (MSC service thread 1-8) WELD-000900: 2.2.6 (Final)
+2015-06-14 20:06:13,886 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) JBAS016008: Starting weld service for deployment task4.war
+2015-06-14 20:06:14,120 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 50) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'task4.war#task4'
+2015-06-14 20:06:14,267 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 50) HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2015-06-14 20:06:14,666 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 50) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2015-06-14 20:06:14,678 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 50) HHH000431: Unable to determine H2 database version, certain features may not work
+2015-06-14 20:06:14,738 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 50) HHH000397: Using ASTQueryTranslatorFactory
+2015-06-14 20:06:16,178 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (MSC service thread 1-2) Initializing Mojarra 2.2.8-jbossorg-1 20140822-1131 for context '/task4'
+2015-06-14 20:06:18,258 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (MSC service thread 1-2) Running on PrimeFaces 5.1
+2015-06-14 20:06:18,290 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017534: Registered web context: /task4
+2015-06-14 20:06:18,760 INFO  [org.jboss.as.server] (management-handler-thread - 4) JBAS018559: Deployed "task4.war" (runtime-name : "task4.war")
+2015-06-14 20:09:36,539 INFO  [org.jboss.as.repository] (management-handler-thread - 1) JBAS014900: Content added at location C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\standalone\data\content\e2\30c8ed6cf885f96eac6111fdee249dcb8b6d09\content
+2015-06-14 20:09:36,556 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017535: Unregistered web context: /task4
+2015-06-14 20:09:36,589 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 65) JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'task4.war#task4'
+2015-06-14 20:09:36,602 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) JBAS016009: Stopping weld service for deployment task4.war
+2015-06-14 20:09:36,650 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 65) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'task4.war#task4'
+2015-06-14 20:09:36,840 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment task4.war (runtime-name: task4.war) in 293ms
+2015-06-14 20:09:36,842 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "task4.war" (runtime-name: "task4.war")
+2015-06-14 20:09:37,984 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) JBAS011401: Read persistence.xml for task4
+2015-06-14 20:09:38,099 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015877: Stopped deployment task4.war (runtime-name: task4.war) in 1255ms
+2015-06-14 20:09:38,101 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "task4.war" (runtime-name: "task4.war")
+2015-06-14 20:09:38,729 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) JBAS011401: Read persistence.xml for task4
+2015-06-14 20:09:38,841 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 65) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'task4.war#task4'
+2015-06-14 20:09:38,844 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 65) HHH000204: Processing PersistenceUnitInfo [
+	name: task4
+	...]
+2015-06-14 20:09:38,928 ERROR [org.jboss.as.jsf] (MSC service thread 1-1) JBAS012611: JSF managed bean class Reader has no default constructor
+2015-06-14 20:09:38,946 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) JBAS016002: Processing weld deployment task4.war
+2015-06-14 20:09:38,981 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-1) JNDI bindings for session bean named UserRepo in deployment unit deployment "task4.war" are as follows:
+
+	java:global/task4/UserRepo!UserRepo
+	java:app/task4/UserRepo!UserRepo
+	java:module/UserRepo!UserRepo
+	java:global/task4/UserRepo
+	java:app/task4/UserRepo
+	java:module/UserRepo
+
+2015-06-14 20:09:38,981 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-1) JNDI bindings for session bean named LoginBean in deployment unit deployment "task4.war" are as follows:
+
+	java:global/task4/LoginBean!LoginBean
+	java:app/task4/LoginBean!LoginBean
+	java:module/LoginBean!LoginBean
+	java:global/task4/LoginBean
+	java:app/task4/LoginBean
+	java:module/LoginBean
+
+2015-06-14 20:09:38,981 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-1) JNDI bindings for session bean named NewsRepo in deployment unit deployment "task4.war" are as follows:
+
+	java:global/task4/NewsRepo!NewsRepo
+	java:app/task4/NewsRepo!NewsRepo
+	java:module/NewsRepo!NewsRepo
+	java:global/task4/NewsRepo
+	java:app/task4/NewsRepo
+	java:module/NewsRepo
+
+2015-06-14 20:09:39,486 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) JBAS016005: Starting Services for CDI deployment: task4.war
+2015-06-14 20:09:39,497 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) JBAS016008: Starting weld service for deployment task4.war
+2015-06-14 20:09:39,507 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 65) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'task4.war#task4'
+2015-06-14 20:09:39,513 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 65) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2015-06-14 20:09:39,514 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 65) HHH000431: Unable to determine H2 database version, certain features may not work
+2015-06-14 20:09:39,517 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 65) HHH000397: Using ASTQueryTranslatorFactory
+2015-06-14 20:09:40,270 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (MSC service thread 1-8) Initializing Mojarra 2.2.8-jbossorg-1 20140822-1131 for context '/task4'
+2015-06-14 20:09:41,681 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (MSC service thread 1-8) Running on PrimeFaces 5.1
+2015-06-14 20:09:41,682 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017534: Registered web context: /task4
+2015-06-14 20:09:41,719 INFO  [org.jboss.as.server] (management-handler-thread - 1) JBAS018562: Redeployed "task4.war"
+2015-06-14 20:09:41,720 INFO  [org.jboss.as.server] (management-handler-thread - 1) JBAS018565: Replaced deployment "task4.war" with deployment "task4.war"
+2015-06-14 20:09:41,724 INFO  [org.jboss.as.repository] (management-handler-thread - 1) JBAS014901: Content removed from location C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\standalone\data\content\a8\6499286dba868e31085db06543959f413825cf\content
+2015-06-14 20:10:53,686 INFO  [org.jboss.as.repository] (management-handler-thread - 1) JBAS014900: Content added at location C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\standalone\data\content\64\f491965f48a1bbdb410b1caca99a4a405cfb1a\content
+2015-06-14 20:10:53,689 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017535: Unregistered web context: /task4
+2015-06-14 20:10:53,714 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 67) JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'task4.war#task4'
+2015-06-14 20:10:53,717 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) JBAS016009: Stopping weld service for deployment task4.war
+2015-06-14 20:10:53,730 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 67) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'task4.war#task4'
+2015-06-14 20:10:53,926 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment task4.war (runtime-name: task4.war) in 237ms
+2015-06-14 20:10:53,928 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015876: Starting deployment of "task4.war" (runtime-name: "task4.war")
+2015-06-14 20:10:55,325 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-2) MSC000001: Failed to start service jboss.deployment.unit."task4.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."task4.war".PARSE: JBAS018733: Failed to process phase PARSE of deployment "task4.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:166) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_31]
+Caused by: java.lang.NullPointerException
+	at org.jboss.as.connector.deployers.ra.processors.IronJacamarDeploymentParsingProcessor.deploy(IronJacamarDeploymentParsingProcessor.java:68)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:159) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+
+2015-06-14 20:10:55,400 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015877: Stopped deployment task4.war (runtime-name: task4.war) in 1472ms
+2015-06-14 20:10:55,403 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "task4.war" (runtime-name: "task4.war")
+2015-06-14 20:10:56,009 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) JBAS011401: Read persistence.xml for task4
+2015-06-14 20:10:56,112 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 67) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'task4.war#task4'
+2015-06-14 20:10:56,113 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 67) HHH000204: Processing PersistenceUnitInfo [
+	name: task4
+	...]
+2015-06-14 20:10:56,229 ERROR [org.jboss.as.jsf] (MSC service thread 1-8) JBAS012611: JSF managed bean class Reader has no default constructor
+2015-06-14 20:10:56,241 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) JBAS016002: Processing weld deployment task4.war
+2015-06-14 20:10:56,271 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named UserRepo in deployment unit deployment "task4.war" are as follows:
+
+	java:global/task4/UserRepo!UserRepo
+	java:app/task4/UserRepo!UserRepo
+	java:module/UserRepo!UserRepo
+	java:global/task4/UserRepo
+	java:app/task4/UserRepo
+	java:module/UserRepo
+
+2015-06-14 20:10:56,271 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named LoginBean in deployment unit deployment "task4.war" are as follows:
+
+	java:global/task4/LoginBean!LoginBean
+	java:app/task4/LoginBean!LoginBean
+	java:module/LoginBean!LoginBean
+	java:global/task4/LoginBean
+	java:app/task4/LoginBean
+	java:module/LoginBean
+
+2015-06-14 20:10:56,271 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named NewsRepo in deployment unit deployment "task4.war" are as follows:
+
+	java:global/task4/NewsRepo!NewsRepo
+	java:app/task4/NewsRepo!NewsRepo
+	java:module/NewsRepo!NewsRepo
+	java:global/task4/NewsRepo
+	java:app/task4/NewsRepo
+	java:module/NewsRepo
+
+2015-06-14 20:10:56,661 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) JBAS016005: Starting Services for CDI deployment: task4.war
+2015-06-14 20:10:56,677 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) JBAS016008: Starting weld service for deployment task4.war
+2015-06-14 20:10:56,690 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 67) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'task4.war#task4'
+2015-06-14 20:10:56,697 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 67) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2015-06-14 20:10:56,698 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 67) HHH000431: Unable to determine H2 database version, certain features may not work
+2015-06-14 20:10:56,703 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 67) HHH000397: Using ASTQueryTranslatorFactory
+2015-06-14 20:10:57,088 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (MSC service thread 1-1) Initializing Mojarra 2.2.8-jbossorg-1 20140822-1131 for context '/task4'
+2015-06-14 20:10:59,155 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (MSC service thread 1-1) Running on PrimeFaces 5.1
+2015-06-14 20:10:59,156 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017534: Registered web context: /task4
+2015-06-14 20:10:59,515 INFO  [org.jboss.as.server] (management-handler-thread - 1) JBAS018562: Redeployed "task4.war"
+2015-06-14 20:10:59,516 INFO  [org.jboss.as.server] (management-handler-thread - 1) JBAS018565: Replaced deployment "task4.war" with deployment "task4.war"
+2015-06-14 20:10:59,520 INFO  [org.jboss.as.repository] (management-handler-thread - 1) JBAS014901: Content removed from location C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\standalone\data\content\e2\30c8ed6cf885f96eac6111fdee249dcb8b6d09\content
+2015-06-14 20:11:29,785 ERROR [io.undertow.request] (default task-13) UT005023: Exception handling request to /task4/faces/index.xhtml: javax.servlet.ServletException: viewId:/index.xhtml - View /index.xhtml could not be restored.
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:659) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_31]
+Caused by: javax.faces.application.ViewExpiredException: viewId:/index.xhtml - View /index.xhtml could not be restored.
+	at com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:210) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.lifecycle.RestoreViewPhase.doPhase(RestoreViewPhase.java:121) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:646) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	... 26 more
+
+2015-06-14 20:11:42,053 SEVERE [javax.enterprise.resource.webcontainer.jsf.application] (default task-17) Error Rendering View[/readerspanel.xhtml]: javax.faces.FacesException: Cannot find component with expression "msg" referenced from "j_idt7:j_idt10".
+	at org.primefaces.expression.SearchExpressionFacade.resolveComponentInternal(SearchExpressionFacade.java:422) [primefaces-5.1.jar:5.1]
+	at org.primefaces.expression.SearchExpressionFacade.resolveComponentForClient(SearchExpressionFacade.java:200) [primefaces-5.1.jar:5.1]
+	at org.primefaces.expression.SearchExpressionFacade.resolveComponentsForClient(SearchExpressionFacade.java:147) [primefaces-5.1.jar:5.1]
+	at org.primefaces.util.AjaxRequestBuilder.addExpressions(AjaxRequestBuilder.java:92) [primefaces-5.1.jar:5.1]
+	at org.primefaces.util.AjaxRequestBuilder.update(AjaxRequestBuilder.java:85) [primefaces-5.1.jar:5.1]
+	at org.primefaces.behavior.ajax.AjaxBehaviorRenderer.getScript(AjaxBehaviorRenderer.java:80) [primefaces-5.1.jar:5.1]
+	at javax.faces.component.behavior.ClientBehaviorBase.getScript(ClientBehaviorBase.java:103) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at org.primefaces.renderkit.CoreRenderer.buildDomEvent(CoreRenderer.java:295) [primefaces-5.1.jar:5.1]
+	at org.primefaces.renderkit.CoreRenderer.renderDomEvent(CoreRenderer.java:228) [primefaces-5.1.jar:5.1]
+	at org.primefaces.renderkit.CoreRenderer.renderOnchange(CoreRenderer.java:219) [primefaces-5.1.jar:5.1]
+	at org.primefaces.component.selectbooleancheckbox.SelectBooleanCheckboxRenderer.encodeInput(SelectBooleanCheckboxRenderer.java:107) [primefaces-5.1.jar:5.1]
+	at org.primefaces.component.selectbooleancheckbox.SelectBooleanCheckboxRenderer.encodeMarkup(SelectBooleanCheckboxRenderer.java:81) [primefaces-5.1.jar:5.1]
+	at org.primefaces.component.selectbooleancheckbox.SelectBooleanCheckboxRenderer.encodeEnd(SelectBooleanCheckboxRenderer.java:60) [primefaces-5.1.jar:5.1]
+	at javax.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:919) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.encodeRecursive(HtmlBasicRenderer.java:312) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.renderkit.html_basic.GroupRenderer.encodeChildren(GroupRenderer.java:114) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:889) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1856) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.render.Renderer.encodeChildren(Renderer.java:176) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:889) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1856) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1859) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1859) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:456) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:133) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.application.ViewHandlerWrapper.renderView(ViewHandlerWrapper.java:337) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.application.ViewHandlerWrapper.renderView(ViewHandlerWrapper.java:337) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:120) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:647) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_31]
+
+2015-06-14 20:11:42,065 ERROR [io.undertow.request] (default task-17) UT005023: Exception handling request to /task4/faces/index.xhtml: javax.servlet.ServletException: Cannot find component with expression "msg" referenced from "j_idt7:j_idt10".
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:659) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_31]
+Caused by: javax.faces.FacesException: Cannot find component with expression "msg" referenced from "j_idt7:j_idt10".
+	at org.primefaces.expression.SearchExpressionFacade.resolveComponentInternal(SearchExpressionFacade.java:422) [primefaces-5.1.jar:5.1]
+	at org.primefaces.expression.SearchExpressionFacade.resolveComponentForClient(SearchExpressionFacade.java:200) [primefaces-5.1.jar:5.1]
+	at org.primefaces.expression.SearchExpressionFacade.resolveComponentsForClient(SearchExpressionFacade.java:147) [primefaces-5.1.jar:5.1]
+	at org.primefaces.util.AjaxRequestBuilder.addExpressions(AjaxRequestBuilder.java:92) [primefaces-5.1.jar:5.1]
+	at org.primefaces.util.AjaxRequestBuilder.update(AjaxRequestBuilder.java:85) [primefaces-5.1.jar:5.1]
+	at org.primefaces.behavior.ajax.AjaxBehaviorRenderer.getScript(AjaxBehaviorRenderer.java:80) [primefaces-5.1.jar:5.1]
+	at javax.faces.component.behavior.ClientBehaviorBase.getScript(ClientBehaviorBase.java:103) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at org.primefaces.renderkit.CoreRenderer.buildDomEvent(CoreRenderer.java:295) [primefaces-5.1.jar:5.1]
+	at org.primefaces.renderkit.CoreRenderer.renderDomEvent(CoreRenderer.java:228) [primefaces-5.1.jar:5.1]
+	at org.primefaces.renderkit.CoreRenderer.renderOnchange(CoreRenderer.java:219) [primefaces-5.1.jar:5.1]
+	at org.primefaces.component.selectbooleancheckbox.SelectBooleanCheckboxRenderer.encodeInput(SelectBooleanCheckboxRenderer.java:107) [primefaces-5.1.jar:5.1]
+	at org.primefaces.component.selectbooleancheckbox.SelectBooleanCheckboxRenderer.encodeMarkup(SelectBooleanCheckboxRenderer.java:81) [primefaces-5.1.jar:5.1]
+	at org.primefaces.component.selectbooleancheckbox.SelectBooleanCheckboxRenderer.encodeEnd(SelectBooleanCheckboxRenderer.java:60) [primefaces-5.1.jar:5.1]
+	at javax.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:919) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.encodeRecursive(HtmlBasicRenderer.java:312) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.renderkit.html_basic.GroupRenderer.encodeChildren(GroupRenderer.java:114) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:889) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1856) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.render.Renderer.encodeChildren(Renderer.java:176) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:889) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1856) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1859) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1859) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:456) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:133) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.application.ViewHandlerWrapper.renderView(ViewHandlerWrapper.java:337) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.application.ViewHandlerWrapper.renderView(ViewHandlerWrapper.java:337) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:120) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:647) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	... 26 more
+
+2015-06-14 20:12:09,854 INFO  [org.jboss.as.repository] (management-handler-thread - 1) JBAS014900: Content added at location C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\standalone\data\content\2c\8cdc31be2ecd1da0f557ff380b7a8a5c919131\content
+2015-06-14 20:12:09,857 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017535: Unregistered web context: /task4
+2015-06-14 20:12:09,876 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 89) JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'task4.war#task4'
+2015-06-14 20:12:09,879 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) JBAS016009: Stopping weld service for deployment task4.war
+2015-06-14 20:12:09,904 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 89) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'task4.war#task4'
+2015-06-14 20:12:10,176 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment task4.war (runtime-name: task4.war) in 320ms
+2015-06-14 20:12:10,181 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "task4.war" (runtime-name: "task4.war")
+2015-06-14 20:12:10,816 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) JBAS011401: Read persistence.xml for task4
+2015-06-14 20:12:10,984 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 89) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'task4.war#task4'
+2015-06-14 20:12:10,984 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 89) HHH000204: Processing PersistenceUnitInfo [
+	name: task4
+	...]
+2015-06-14 20:12:11,111 ERROR [org.jboss.as.jsf] (MSC service thread 1-6) JBAS012611: JSF managed bean class Reader has no default constructor
+2015-06-14 20:12:11,127 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) JBAS016002: Processing weld deployment task4.war
+2015-06-14 20:12:11,181 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-6) JNDI bindings for session bean named UserRepo in deployment unit deployment "task4.war" are as follows:
+
+	java:global/task4/UserRepo!UserRepo
+	java:app/task4/UserRepo!UserRepo
+	java:module/UserRepo!UserRepo
+	java:global/task4/UserRepo
+	java:app/task4/UserRepo
+	java:module/UserRepo
+
+2015-06-14 20:12:11,181 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-6) JNDI bindings for session bean named LoginBean in deployment unit deployment "task4.war" are as follows:
+
+	java:global/task4/LoginBean!LoginBean
+	java:app/task4/LoginBean!LoginBean
+	java:module/LoginBean!LoginBean
+	java:global/task4/LoginBean
+	java:app/task4/LoginBean
+	java:module/LoginBean
+
+2015-06-14 20:12:11,182 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-6) JNDI bindings for session bean named NewsRepo in deployment unit deployment "task4.war" are as follows:
+
+	java:global/task4/NewsRepo!NewsRepo
+	java:app/task4/NewsRepo!NewsRepo
+	java:module/NewsRepo!NewsRepo
+	java:global/task4/NewsRepo
+	java:app/task4/NewsRepo
+	java:module/NewsRepo
+
+2015-06-14 20:12:11,580 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) JBAS016005: Starting Services for CDI deployment: task4.war
+2015-06-14 20:12:11,589 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) JBAS016008: Starting weld service for deployment task4.war
+2015-06-14 20:12:11,620 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 89) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'task4.war#task4'
+2015-06-14 20:12:11,632 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 89) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2015-06-14 20:12:11,633 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 89) HHH000431: Unable to determine H2 database version, certain features may not work
+2015-06-14 20:12:11,636 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 89) HHH000397: Using ASTQueryTranslatorFactory
+2015-06-14 20:12:12,700 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (MSC service thread 1-3) Initializing Mojarra 2.2.8-jbossorg-1 20140822-1131 for context '/task4'
+2015-06-14 20:12:14,579 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (MSC service thread 1-3) Running on PrimeFaces 5.1
+2015-06-14 20:12:14,580 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017534: Registered web context: /task4
+2015-06-14 20:12:14,711 INFO  [org.jboss.as.server] (management-handler-thread - 1) JBAS018562: Redeployed "task4.war"
+2015-06-14 20:12:14,711 INFO  [org.jboss.as.server] (management-handler-thread - 1) JBAS018565: Replaced deployment "task4.war" with deployment "task4.war"
+2015-06-14 20:12:14,716 INFO  [org.jboss.as.repository] (management-handler-thread - 1) JBAS014901: Content removed from location C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\standalone\data\content\64\f491965f48a1bbdb410b1caca99a4a405cfb1a\content
+2015-06-14 20:14:54,367 INFO  [org.jboss.as.repository] (management-handler-thread - 1) JBAS014900: Content added at location C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\standalone\data\content\cc\d037a143f1f7f101ce36dcf3a0b584c651dee8\content
+2015-06-14 20:14:54,371 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017535: Unregistered web context: /task4
+2015-06-14 20:14:54,444 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 100) JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'task4.war#task4'
+2015-06-14 20:14:54,448 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) JBAS016009: Stopping weld service for deployment task4.war
+2015-06-14 20:14:54,470 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 100) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'task4.war#task4'
+2015-06-14 20:14:54,971 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015877: Stopped deployment task4.war (runtime-name: task4.war) in 602ms
+2015-06-14 20:14:54,973 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "task4.war" (runtime-name: "task4.war")
+2015-06-14 20:14:55,601 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) JBAS011401: Read persistence.xml for task4
+2015-06-14 20:14:55,724 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 100) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'task4.war#task4'
+2015-06-14 20:14:55,725 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 100) HHH000204: Processing PersistenceUnitInfo [
+	name: task4
+	...]
+2015-06-14 20:14:55,802 ERROR [org.jboss.as.jsf] (MSC service thread 1-4) JBAS012611: JSF managed bean class Reader has no default constructor
+2015-06-14 20:14:55,814 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) JBAS016002: Processing weld deployment task4.war
+2015-06-14 20:14:55,835 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named UserRepo in deployment unit deployment "task4.war" are as follows:
+
+	java:global/task4/UserRepo!UserRepo
+	java:app/task4/UserRepo!UserRepo
+	java:module/UserRepo!UserRepo
+	java:global/task4/UserRepo
+	java:app/task4/UserRepo
+	java:module/UserRepo
+
+2015-06-14 20:14:55,836 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named LoginBean in deployment unit deployment "task4.war" are as follows:
+
+	java:global/task4/LoginBean!LoginBean
+	java:app/task4/LoginBean!LoginBean
+	java:module/LoginBean!LoginBean
+	java:global/task4/LoginBean
+	java:app/task4/LoginBean
+	java:module/LoginBean
+
+2015-06-14 20:14:55,837 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named NewsRepo in deployment unit deployment "task4.war" are as follows:
+
+	java:global/task4/NewsRepo!NewsRepo
+	java:app/task4/NewsRepo!NewsRepo
+	java:module/NewsRepo!NewsRepo
+	java:global/task4/NewsRepo
+	java:app/task4/NewsRepo
+	java:module/NewsRepo
+
+2015-06-14 20:14:56,503 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) JBAS016005: Starting Services for CDI deployment: task4.war
+2015-06-14 20:14:56,510 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) JBAS016008: Starting weld service for deployment task4.war
+2015-06-14 20:14:56,516 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 100) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'task4.war#task4'
+2015-06-14 20:14:56,520 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 100) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2015-06-14 20:14:56,521 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 100) HHH000431: Unable to determine H2 database version, certain features may not work
+2015-06-14 20:14:56,524 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 100) HHH000397: Using ASTQueryTranslatorFactory
+2015-06-14 20:14:57,230 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (MSC service thread 1-2) Initializing Mojarra 2.2.8-jbossorg-1 20140822-1131 for context '/task4'
+2015-06-14 20:14:59,641 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (MSC service thread 1-2) Running on PrimeFaces 5.1
+2015-06-14 20:14:59,642 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017534: Registered web context: /task4
+2015-06-14 20:15:00,064 INFO  [org.jboss.as.server] (management-handler-thread - 1) JBAS018562: Redeployed "task4.war"
+2015-06-14 20:15:00,064 INFO  [org.jboss.as.server] (management-handler-thread - 1) JBAS018565: Replaced deployment "task4.war" with deployment "task4.war"
+2015-06-14 20:15:00,084 INFO  [org.jboss.as.repository] (management-handler-thread - 1) JBAS014901: Content removed from location C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\standalone\data\content\2c\8cdc31be2ecd1da0f557ff380b7a8a5c919131\content
+2015-06-14 20:36:46,582 INFO  [org.jboss.as.repository] (management-handler-thread - 1) JBAS014900: Content added at location C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\standalone\data\content\15\c106e2ba1447520c5e4c84bf95950c82a24365\content
+2015-06-14 20:36:46,585 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017535: Unregistered web context: /task4
+2015-06-14 20:36:46,613 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 117) JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'task4.war#task4'
+2015-06-14 20:36:46,615 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) JBAS016009: Stopping weld service for deployment task4.war
+2015-06-14 20:36:46,622 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 117) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'task4.war#task4'
+2015-06-14 20:36:46,810 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment task4.war (runtime-name: task4.war) in 225ms
+2015-06-14 20:36:46,812 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "task4.war" (runtime-name: "task4.war")
+2015-06-14 20:36:47,283 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-7) MSC000001: Failed to start service jboss.deployment.unit."task4.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."task4.war".PARSE: JBAS018733: Failed to process phase PARSE of deployment "task4.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:166) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_31]
+Caused by: java.lang.NullPointerException
+	at org.jboss.as.connector.deployers.ra.processors.IronJacamarDeploymentParsingProcessor.deploy(IronJacamarDeploymentParsingProcessor.java:68)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:159) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+
+2015-06-14 20:36:47,345 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment task4.war (runtime-name: task4.war) in 532ms
+2015-06-14 20:36:47,347 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "task4.war" (runtime-name: "task4.war")
+2015-06-14 20:36:47,705 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) JBAS011401: Read persistence.xml for task4
+2015-06-14 20:36:47,789 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 117) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'task4.war#task4'
+2015-06-14 20:36:47,789 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 117) HHH000204: Processing PersistenceUnitInfo [
+	name: task4
+	...]
+2015-06-14 20:36:47,857 ERROR [org.jboss.as.jsf] (MSC service thread 1-6) JBAS012611: JSF managed bean class Reader has no default constructor
+2015-06-14 20:36:47,867 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) JBAS016002: Processing weld deployment task4.war
+2015-06-14 20:36:47,880 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-6) JNDI bindings for session bean named UserRepo in deployment unit deployment "task4.war" are as follows:
+
+	java:global/task4/UserRepo!UserRepo
+	java:app/task4/UserRepo!UserRepo
+	java:module/UserRepo!UserRepo
+	java:global/task4/UserRepo
+	java:app/task4/UserRepo
+	java:module/UserRepo
+
+2015-06-14 20:36:47,881 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-6) JNDI bindings for session bean named LoginBean in deployment unit deployment "task4.war" are as follows:
+
+	java:global/task4/LoginBean!LoginBean
+	java:app/task4/LoginBean!LoginBean
+	java:module/LoginBean!LoginBean
+	java:global/task4/LoginBean
+	java:app/task4/LoginBean
+	java:module/LoginBean
+
+2015-06-14 20:36:47,881 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-6) JNDI bindings for session bean named NewsRepo in deployment unit deployment "task4.war" are as follows:
+
+	java:global/task4/NewsRepo!NewsRepo
+	java:app/task4/NewsRepo!NewsRepo
+	java:module/NewsRepo!NewsRepo
+	java:global/task4/NewsRepo
+	java:app/task4/NewsRepo
+	java:module/NewsRepo
+
+2015-06-14 20:36:48,225 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) JBAS016005: Starting Services for CDI deployment: task4.war
+2015-06-14 20:36:48,232 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) JBAS016008: Starting weld service for deployment task4.war
+2015-06-14 20:36:48,240 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 117) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'task4.war#task4'
+2015-06-14 20:36:48,243 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 117) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2015-06-14 20:36:48,244 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 117) HHH000431: Unable to determine H2 database version, certain features may not work
+2015-06-14 20:36:48,247 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 117) HHH000397: Using ASTQueryTranslatorFactory
+2015-06-14 20:36:48,903 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (MSC service thread 1-4) Initializing Mojarra 2.2.8-jbossorg-1 20140822-1131 for context '/task4'
+2015-06-14 20:36:49,962 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (MSC service thread 1-4) Running on PrimeFaces 5.1
+2015-06-14 20:36:49,963 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017534: Registered web context: /task4
+2015-06-14 20:36:50,236 INFO  [org.jboss.as.server] (management-handler-thread - 1) JBAS018562: Redeployed "task4.war"
+2015-06-14 20:36:50,236 INFO  [org.jboss.as.server] (management-handler-thread - 1) JBAS018565: Replaced deployment "task4.war" with deployment "task4.war"
+2015-06-14 20:36:50,241 INFO  [org.jboss.as.repository] (management-handler-thread - 1) JBAS014901: Content removed from location C:\Users\wojte_000\OneDrive\swa\task4\1276709_TASK4\target\wildfly-run\wildfly-8.2.0.Final\standalone\data\content\cc\d037a143f1f7f101ce36dcf3a0b584c651dee8\content

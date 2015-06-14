@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui" xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>Insert title here</title>
+</head>
+<h:body>
+    <h1>Login</h1>
+    <h:form id="loginForm">
+        <h:outputLabel value="login: " />
+        <h:inputText value="#{loginBean.username}" />
+        <h:outputLabel value=" pass: " />
+        <h:inputSecret value="#{loginBean.password}"></h:inputSecret>
+        <h:commandButton value="Login" action="#{loginBean.login}"></h:commandButton>
+    </h:form>
+    <h1>Register</h1>
+    <h:form>
+        login:     <p:inputText value="#{loginBean.username}" />
+        pass:      <p:password  value="#{loginBean.password}" />&nbsp;
+        <p:commandButton value="Singup as reader"  action="#{loginBean.addReader(loginBean.username, loginBean.password)}"
+                         requiredMessage="Wrong password  "/>&nbsp;
+        <p:commandButton value="Singup as writer"  action="#{loginBean.addWriter(loginBean.username, loginBean.password)}"
+                         requiredMessage="Wrong password  "/><br/>
+        readers:   <p:outputLabel value="#{loginBean.readersListString}" /><br/>
+        writers:   <p:outputLabel value="#{loginBean.writersListString}" />
+    </h:form>
+</h:body>
+</html>
