@@ -1,0 +1,10 @@
+News.class
+Main.class
+Account.class
+User.class
+Writer.class
+NewsRepo.class
+UserRepo.class
+LoginBean.class
+TagManager.class
+Reader.class
