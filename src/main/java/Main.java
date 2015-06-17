@@ -9,21 +9,28 @@ public class Main {
 
 
 
-        Reader r1 = new Reader("login", "password");
-        Reader r2 = new Reader("login", "password");
+//        Reader r1 = new Reader("login", "password");
+//        Reader r2 = new Reader("login", "password");
+//
+//        Writer w = new Writer();
+//        w.registerObserver(r1);
+//        w.registerObserver(r2);
+//
+//
+//       // r1.getSubscribedTopics().add("sport");
+//
+//
+//        News n = new News("jeden", "dwa", "sport");
+//        w.publish(n);
+//        for (News news : r1.getNewsList())
+//            System.out.println(news.getContent());
+    ArrayList<String> tags = new ArrayList<>();
+        tags.add("efwef");
 
-        Writer w = new Writer();
-        w.registerObserver(r1);
-        w.registerObserver(r2);
+        NewsRepo nr = new NewsRepo();
+        nr.addNews("blblb", "politics", tags);
 
-
-       // r1.getSubscribedTopics().add("sport");
-
-
-        News n = new News("jeden", "dwa", "sport");
-        w.publish(n);
-        for (News news : r1.getNewsList())
-            System.out.println(news.getContent());
+        System.out.print(nr.getNewsMap().toString());
 
         /*
         ArrayList<String> topics = new ArrayList<>();

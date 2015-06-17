@@ -12,6 +12,4 @@ public interface User {
     String username = null;
     @NotNull@Pattern(regexp = "((?=.*\\d)(?=.*[A-Z]).{6,})", message = "{invalid.password}")
     String password = null;
-
-
 }

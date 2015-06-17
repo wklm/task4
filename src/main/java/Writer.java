@@ -1,7 +1,4 @@
-import javax.enterprise.inject.New;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
-import javax.faces.bean.SessionScoped;
 import javax.faces.bean.ViewScoped;
 import java.util.ArrayList;
 import java.util.Observable;
@@ -12,7 +9,7 @@ import java.util.Observer;
  */
 @ViewScoped
 @ManagedBean(name="writer")
-public class Writer extends Observable implements User{
+public class Writer extends Observable implements User {
     Account account;
 
     private ArrayList<News> publications = new ArrayList<News>();

@@ -37,4 +37,12 @@ public class Account {
         this.login = login;
         this.password = password;
     }
+
+    public boolean changePassword(String oldPassword, String newPassword) {
+        if (getPassword().equals(oldPassword)) {
+            setPassword(newPassword);
+            return true;
+        }
+        return false;
+    }
 }

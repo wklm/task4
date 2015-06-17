@@ -4,21 +4,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:p="http://primefaces.org/ui" xmlns:f="http://xmlns.jcp.org/jsf/core">
-
-<f:view>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>Register</title>
+</head>
+<h:body>
     <h1>Register</h1>
-
     <h:form>
-        login:     <p:inputText value="#{loginManager.login}" />
-        pass:      <p:password  value="#{loginManager.pass}" />&nbsp;
-                   <p:commandButton value="Singup as reader"  action="#{loginManager.addReader(loginManager.login, loginManager.pass)}"
-                                    requiredMessage="Wrong password  "/>
-                   <p:commandButton value="Singup as writer"  action="#{loginManager.addWriter(loginManager.login, loginManager.pass)}"
-                                    requiredMessage="Wrong password  "/><br/>
-        readers:   <p:outputLabel value="#{loginManager.readersListString}" /><br/>
-        writers:   <p:outputLabel value="#{loginManager.writersListString}" />
-
+        login:     <p:inputText value="#{userBean.username}" />
+        pass:      <p:password  value="#{userBean.password}" />&nbsp;
+        <p:commandButton value="Singup as reader"  action="#{userBean.addReader(userBean.username, userBean.password)}"
+                         requiredMessage="Wrong password  "/>&nbsp;
+        <p:commandButton value="Singup as writer"  action="#{userBean.addWriter(userBean.username, userBean.password)}"
+                         requiredMessage="Wrong password  "/><br/>
+        readers:   <p:outputLabel value="#{userBean.readersListString}" /><br/>
+        writers:   <p:outputLabel value="#{userBean.writersListString}" />
     </h:form>
-
-</f:view>
+</h:body>
 </html>

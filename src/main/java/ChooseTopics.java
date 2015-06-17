@@ -57,6 +57,5 @@ public class ChooseTopics {
         FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(politicsSummary));
         FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(musicSummary));
         FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(filmSummary));
-
     }
 }

@@ -1,13 +1,15 @@
 News.class
+NewsBean.class
 Topic.class
+UserBean.class
 TopicRepo.class
 Writer.class
 UserRepo.class
 TagManager.class
 Main.class
+TopicBean.class
 Account.class
 ChooseTopics.class
 User.class
 NewsRepo.class
-LoginBean.class
 Reader.class

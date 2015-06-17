@@ -1,7 +1,4 @@
-import javax.ejb.Stateless;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
-import javax.faces.bean.SessionScoped;
 import javax.faces.bean.ViewScoped;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -59,5 +56,16 @@ public class Reader implements Observer, Serializable, User {
     public void setSubscribedTopics(ArrayList<Topic> subscribedTopics) {
         this.subscribedTopics = subscribedTopics;
     }
+
+    public Integer getPaging() {
+        return paging;
+    }
+
+    public void setPaging(Integer paging) {
+        this.paging = paging;
+    }
+
+    Integer paging;
+
 
 }

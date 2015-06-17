@@ -385,7 +385,7 @@
 
     <deployments>
         <deployment name="task4.war" runtime-name="task4.war">
-            <content sha1="e230c8ed6cf885f96eac6111fdee249dcb8b6d09"/>
+            <content sha1="69198b1079a3479e17dd0fb194c429b94ffa2913"/>
         </deployment>
     </deployments>
 </server>

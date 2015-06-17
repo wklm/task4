@@ -1,9 +1,8 @@
 import javax.ejb.Singleton;
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ViewScoped;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import javax.faces.context.FacesContext;
+import java.util.*;
 
 /**
  * Created by wojte_000 on 6/7/2015.
@@ -13,7 +12,6 @@ import java.util.Map;
 public class NewsRepo {
 
     HashMap<String, ArrayList<News>> newsMap = new HashMap<>();
-    ArrayList<String> topicsToChoose = new ArrayList<>();
 
     // tags:
     ArrayList<News> politics = new ArrayList<>();
@@ -28,11 +26,19 @@ public class NewsRepo {
         newsMap.put("film", film);
         newsMap.put("music", music);
         newsMap.put("automotive", automotive);
-        topicsToChoose.add("politics");
-        topicsToChoose.add("sport");
-        topicsToChoose.add("film");
-        topicsToChoose.add("music");
-        topicsToChoose.add("automotive");
+    }
+
+    public void addNews(String topic, String content, ArrayList<String> tags) {
+
+        if (newsMap.get(topic) != null && content != null && tags != null){
+            News news = new News();
+            news.setContent(content);
+            news.setTopic(topic);
+            news.setTags(tags);
+            newsMap.get(topic).add(news);
+        }
+        else FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "ooops :(", "wrong input"));
+
     }
 
     public HashMap<String, ArrayList<News>> getNewsMap() {
@@ -82,4 +88,6 @@ public class NewsRepo {
     public void setAutomotive(ArrayList<News> automotive) {
         this.automotive = automotive;
     }
+
+
 }
