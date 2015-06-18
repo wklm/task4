@@ -33,6 +33,8 @@
     <h:panelGroup rendered="#{userBean.logedasReader}">
         <p:link outcome="account" value="Settings"/>
         <!--<p:link outcome="search" value="Search"/>-->
+
+        <h:outputLabel value="#{newsBean.}"
         <h:form>
             <!--<p:dataTable value="#{newsController.newsList}"-->
                          <!--id="newsfeedTable"-->
@@ -81,10 +83,8 @@
 
     <h:panelGroup rendered="#{userBean.logedasWriter}">
 
-        <h1>Index for registrated User.Writer</h1>
-        <h:form id="newNewsForm">
+        <h:form>
             <p:panel header="Write new Text: " style="text-align:left">
-                <p:inputText  value="#{newsBean.topic}" />
 
                 <!--<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5" id="newNewsTopics">-->
                     <!--<h:outputText value="Topics:" />-->
@@ -92,12 +92,16 @@
                             <!--<f:selectItems  value="#{topicController.topicListString}" var="top" itemLabel="#{top}" itemValue="#{top}" />-->
                     <!--</p:selectManyCheckbox>-->
                 <!--</h:panelGrid>-->
+                <h:outputLabel value="Title : "/>
+                <h:inputText value="#{newsBean.news.title}" />
                 <h:outputLabel value="Topic : "/>
-                <p:inputText value="#{newsBean.topic}" />
+                <h:inputText value="#{newsBean.news.topic}" />
                 <h:outputLabel value="Text : "/>
-                <p:editor value="#{newsBean.content}" controls=""/>
-                <p:commandButton value="Submit" id="newNews" action="#{newsBean.addNews}" ajax="false"  />
+                <p:editor value="#{newsBean.news.content}" controls=""/>
+                <h:commandButton value="Submit" id="newNews" action="#{newsBean.addNews()}" ajax="false"  />
             </p:panel>
+
+            <h:outputFormat value="#{newsBean.newsString}" />
         </h:form>
     </h:panelGroup>
 

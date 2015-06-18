@@ -8,6 +8,16 @@ public class Main {
     public static void main(String[] args) {
 
 
+
+        NewsBean nb = new NewsBean();
+
+        nb.getNews().setTopic("elo");
+        nb.getNews().setContent("elo");
+        nb.getNews().setTitle("elo");
+
+        nb.addNews();
+
+
 //
 //        Reader r1 = new Reader("login", "password");
 //        Reader r2 = new Reader("login", "password");
