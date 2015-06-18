@@ -1,5 +1,6 @@
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
+import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.Observable;
 import java.util.Observer;
@@ -9,41 +10,23 @@ import java.util.Observer;
  */
 @ViewScoped
 @ManagedBean(name="writer")
-public class Writer extends Observable implements User {
+public class Writer implements User {
     Account account;
+    @Inject
+    NewsRepo news;
+    String topic;
+    String content;
 
-    private ArrayList<News> publications = new ArrayList<News>();
-    private ArrayList<Observer> observers = new ArrayList<Observer>();
+   public void wirte() {
+        //news.addNews(getTopic(),getContent());
+    }
+
+    public void write(String title, String content) {
+        //news.addNews(title,topic);
+    }
 
     public Writer(String login, String pass) {
         this.account = new Account(login,pass);
-    }
-
-
-    public void publish(News news) {
-        publications.add(news);
-        notifyObservers(this, news);
-    }
-
-    public void notifyObservers(Observable observable, News news) {
-        for (Observer ob : observers) {
-            ob.update(observable, news);
-        }
-    }
-    public void registerObserver(Observer observer) {
-        observers.add(observer);
-    }
-    public ArrayList<News> getNewses() {
-        return publications;
-    }
-    public void setNewses(ArrayList<News> newses) {
-        this.publications = newses;
-    }
-    public ArrayList<Observer> getObservers() {
-        return observers;
-    }
-    public void setObservers(ArrayList<Observer> observers) {
-        this.observers = observers;
     }
     public Account getAccount() {
         return account;
@@ -52,6 +35,31 @@ public class Writer extends Observable implements User {
     public void setAccount(Account account) {
         this.account = account;
     }
+
+    public String getTopic() {
+        return topic;
+    }
+
+    public void setTopic(String topic) {
+        this.topic = topic;
+    }
+
+    public NewsRepo getNews() {
+        return news;
+    }
+
+    public void setNews(NewsRepo news) {
+        this.news = news;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
     public Writer() {}
 
 

@@ -1,6 +1,7 @@
 import javax.ejb.Stateful;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.bean.ViewScoped;
 import javax.inject.Inject;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -8,11 +9,11 @@ import java.util.HashMap;
 
 @ManagedBean
 @SessionScoped
-@Stateful
 public class UserBean {
 
     @Inject
     UserRepo users;
+
     @NotNull
     String username;
     @NotNull
@@ -27,9 +28,21 @@ public class UserBean {
     String oldPass;
     String newPass;
     Integer currentReaderPaging;
+    Integer newPaging;
     boolean loggedIn;
-    boolean loggedInAsReader;
-    boolean loggedInAsWriter;
+    @Inject
+    TopicBean topics;
+
+
+    public Integer getNewPaging() {
+        return newPaging;
+    }
+
+    public void setNewPaging(Integer newPaging) {
+        this.newPaging = newPaging;
+    }
+
+
 
     public void addReader(String login, String pass) {
         if (users.getReaders().get(login) == null && users.getWriters().get(login) == null) {
@@ -48,17 +61,17 @@ public class UserBean {
     public String login() {
         if (users.getWriters().get(username) != null && users.getWriters().get(username).getAccount().getPassword().equals(password)) {
             currentUser = users.getWriters().get(username);
-            return "writerspanel";
+            return "index";
         }
         if (users.getReaders().get(username) != null && users.getReaders().get(username).getAccount().getPassword().equals(password)) {
             currentUser = users.getReaders().get(username);
-            return "account";
+            return "index";
         } else return "failure";
     }
 
     public String logout() {
         currentUser = null;
-        return "register?faces-redirect=true";
+        return "index?faces-redirect=true";
     }
 
     public String getCurrentUserName() {
@@ -85,30 +98,39 @@ public class UserBean {
         return false;
     }
 
+    public boolean isLogedasReader() {
+        return currentUser instanceof Reader;
+    }
+    public boolean isLogedasWriter() {
+        return currentUser instanceof Writer;
+    }
+
     public String init() {
         String testReaderName = "testreader";
-        String testWritername = "testwriter";
+        String testWriterName = "testwriter";
         String testPass = "A1test";
         // v.1 : reader + topics
-        Topic t1 = new Topic();
-        Topic t2 = new Topic();
-        Topic t3 = new Topic();
-        t1.setTitle("automotive");
-        t2.setTitle("politics");
-        t3.setTitle("music");
+        Topic t1 = new Topic("automotive");
+        Topic t2 = new Topic("politics");
+        Topic t3 = new Topic("music");
         addReader(testReaderName, testPass);
         users.getReaders().get(testReaderName).getSubscribedTopics().add(t1);
         users.getReaders().get(testReaderName).getSubscribedTopics().add(t2);
         users.getReaders().get(testReaderName).getSubscribedTopics().add(t3);
         // v.2 : news provider
-        addWriter(testWritername, testPass);
+        this.addWriter(testWriterName,testPass);
         // v.3 : subscribable items
         News n1 = new News("title1", "topic1", "politics");
         News n2 = new News("title2", "topic2", "automotive");
-        users.getWriters().get(testReaderName).publish(n1);
-        users.getWriters().get(testReaderName).publish(n2);
-        users.getWriters().get(testWritername).registerObserver(users.getReaders().get(testReaderName));
+        users.getWriters().get(testReaderName).write("title1", "topic1");
+        users.getWriters().get(testReaderName).write("title2", "topic2");
+       // users.getWriters().get(testWriterName).registerObserver(users.getReaders().get(testReaderName));
+
         return "index";
+    }
+
+    public void changePaging(int i) {
+
     }
     public boolean isLoggedIn() {
         return currentUser != null;
@@ -226,18 +248,13 @@ public class UserBean {
         this.users.getReaders().get(getCurrentUserName()).setPaging(currentReaderPaging);
     }
 
-    public boolean isLoggedInAsReader() {
-        return loggedInAsReader;
+
+    public TopicBean getTopics() {
+        return topics;
     }
 
-    public void setLoggedInAsReader(boolean loggedInAsReader) {
-        this.loggedInAsReader = loggedInAsReader;
-    }
-    public boolean isLoggedInAsWriter() {
-        return loggedInAsWriter;
+    public void setTopics(TopicBean topics) {
+        this.topics = topics;
     }
 
-    public void setLoggedInAsWriter(boolean loggedInAsWriter) {
-        this.loggedInAsWriter = loggedInAsWriter;
-    }
 }

@@ -11,12 +11,12 @@
     <h1>Index for registrated User.Writer</h1>
         <h:form>
             <p:panel header="Write new article: " style="text-align:left">
-              title:  <p:inputText  value="#{newsBean.toppic}" />
+              name:  <p:inputText  value="#{newsBean.topic}" />
                 <h:outputLabel value="Text : "/>
                 <p:editor value="#{newsBean.content}" controls=""/>
                 <h:outputLabel value="tags (separated by commas) : "/>
                 <p:editor value="#{newsBean.tags}" controls=""/>
-                <p:commandButton value="Submit" id="newNews" action="#{newsBean.newsMap.addNews(newsBean.toppic, newsBean.content, newsBean.tags)}" ajax="false"  />
+                <p:commandButton value="Submit" id="newNews" action="#{newsBean.newsMap.addNews(newsBean.topic, newsBean.content, newsBean.tags)}" ajax="false"  />
             </p:panel>
         </h:form>
 </h:body>

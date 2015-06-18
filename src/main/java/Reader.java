@@ -17,8 +17,8 @@ public class Reader implements Observer, Serializable, User {
         this.account = new Account(login, password);
     }
     ArrayList<News> newsList = new ArrayList<>();
-    ChooseTopics topics;
-    ArrayList<Topic> subscribedTopics;
+    TopicBean topics;
+    ArrayList<Topic> subscribedTopics = new ArrayList<>();
 
     @Override
     public void update(Observable o, Object news) {
@@ -40,11 +40,11 @@ public class Reader implements Observer, Serializable, User {
     public void setNewsList(ArrayList<News> newsList) {
         this.newsList = newsList;
     }
-    public ChooseTopics getTopics() {
+    public TopicBean getTopics() {
         return topics;
     }
 
-    public void setTopics(ChooseTopics topics) {
+    public void setTopics(TopicBean topics) {
         this.topics = topics;
     }
 

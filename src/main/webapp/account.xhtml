@@ -6,7 +6,6 @@
       xmlns:p="http://primefaces.org/ui" xmlns:f="http://xmlns.jcp.org/jsf/core">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-    <title>Insert title here</title>
 </head>
 <h:body>
     <p:outputLabel value="welcome " style="font-size: 400%"></p:outputLabel>
@@ -17,34 +16,34 @@
         <p:growl id="msg" />
         <h:panelGrid columns="2" style="margin-bottom:0px" cellpadding="0">
             <h:outputText value="sport: " />
-            <p:selectBooleanCheckbox value="#{chooseTopics.sport}">
-                <p:ajax update="msg" listener="#{chooseTopics.addMessage}" />
+            <p:selectBooleanCheckbox value="#{userBean.topics.sport}">
+                <p:ajax update="msg" listener="#{userBean.addReaderTopicSubscription}" />
             </p:selectBooleanCheckbox>
             <h:outputText value="automotive: " />
-            <p:selectBooleanCheckbox value="#{chooseTopics.automotive}">
-                <p:ajax update="msg" listener="#{chooseTopics.addMessage}" />
+            <p:selectBooleanCheckbox value="#{userBean.topics.automotive}">
+                <p:ajax update="msg" listener="#{userBean.addReaderTopicSubscription}" />
             </p:selectBooleanCheckbox>
             <h:outputText value="politics: " />
-            <p:selectBooleanCheckbox value="#{chooseTopics.politics}">
-                <p:ajax update="msg" listener="#{chooseTopics.addMessage}" />
+            <p:selectBooleanCheckbox value="#{userBean.topics.politics}">
+                <p:ajax update="msg" listener="#{userBean.addReaderTopicSubscription}" />
             </p:selectBooleanCheckbox>
             <h:outputText value="music: " />
-            <p:selectBooleanCheckbox value="#{chooseTopics.music}">
-                <p:ajax update="msg" listener="#{chooseTopics.addMessage}" />
+            <p:selectBooleanCheckbox value="#{userBean.topics.music}">
+                <p:ajax update="msg" listener="#{userBean.addReaderTopicSubscription}" />
             </p:selectBooleanCheckbox>
             <h:outputText value="film: " />
-            <p:selectBooleanCheckbox value="#{chooseTopics.film}">
-                <p:ajax update="msg" listener="#{chooseTopics.addMessage}" />
+            <p:selectBooleanCheckbox value="#{userBean.topics.film}">
+                <p:ajax update="msg" listener="#{userBean.addReaderTopicSubscription}" />
             </p:selectBooleanCheckbox>
         </h:panelGrid>
         <p:commandButton value="Submit" icon="ui-icon-check" update="display" oncomplete="PF('dlg').show()" />
         <p:dialog header="Values" modal="subscribed" resizable="unsubscribed" showEffect="fade" widgetVar="dlg">
             <h:panelGrid columns="1" id="display">
-                <h:outputText value="sport: #{chooseTopics.sport}" />
-                <h:outputText value="automotive: #{chooseTopics.automotive}" />
-                <h:outputText value="politics: #{chooseTopics.politics}" />
-                <h:outputText value="music: #{chooseTopics.music}" />
-                <h:outputText value="film: #{chooseTopics.film}" />
+                <h:outputText value="sport: #{userBean.topics.sport}" />
+                <h:outputText value="automotive: #{userBean.topics.automotive}" />
+                <h:outputText value="politics: #{userBean.topics.politics}" />
+                <h:outputText value="music: #{userBean.topics.music}" />
+                <h:outputText value="film: #{userBean.topics.film}" />
             </h:panelGrid>
         </p:dialog>
     </h:form>
@@ -67,26 +66,17 @@
     </h:form>
     <h1>Change Paging</h1>
     <h:form>
-    <h:panelGrid columns="2" cellpadding="5" class="ui-grid">
-    <h:outputLabel for="ajaxSpinner" value="Number of articles to display: " />
-    <p:outputPanel>
-        <p:spinner id="ajaxSpinner" value="#{userBean.currentReaderPaging}">
-            <p:ajax update="ajaxSpinnerValue" process="@this" />
-        </p:spinner>
-        <h:outputText id="ajaxSpinnerValue" value="#{userBean.currentReaderPaging}" style="padding-left: 10px" />
-    </p:outputPanel>
-        </h:panelGrid>
-        <p:commandButton value="Submit" update="display1" oncomplete="PF('dlg').show()" />
-
-        <p:dialog header="Values" widgetVar="dlg" showEffect="fold" hideEffect="fold">
-        <h:panelGrid id="display1" columns="2" cellpadding="5">
-        <h:outputText value="Value 1: " />
-        <h:outputText value="#{userBean.currentReaderPaging}" />
-        </h:panelGrid>
-        </p:dialog>
-
+        <p:panel header="Change max number pages: " style="text-align:left">
+            <p:selectOneMenu id="number" value="#{userBean.newPaging}" style="width:125px">
+                <f:selectItem itemLabel="2" itemValue="2" />
+                <f:selectItem itemLabel="5" itemValue="5" />
+                <f:selectItem itemLabel="10" itemValue="10" />
+                <f:selectItem itemLabel="20" itemValue="20" />
+                <f:selectItem itemLabel="50" itemValue="50" />
+            </p:selectOneMenu>
+            <h:commandButton value="change" action="#{userBean.changePaging}"/>
+            <h:outputText value="#{userBean.currentReaderPaging}" />
+        </p:panel>
     </h:form>
-
-
 </h:body>
 </html>
