@@ -14,27 +14,11 @@
 
     <h:form>
         <p:growl id="msg" />
-        <h:panelGrid columns="2" style="margin-bottom:0px" cellpadding="0">
-            <h:outputText value="sport: " />
-            <p:selectBooleanCheckbox value="#{userBean.topics.sport}">
-                <p:ajax update="msg" listener="#{userBean.addReaderTopicSubscription}" />
-            </p:selectBooleanCheckbox>
-            <h:outputText value="automotive: " />
-            <p:selectBooleanCheckbox value="#{userBean.topics.automotive}">
-                <p:ajax update="msg" listener="#{userBean.addReaderTopicSubscription}" />
-            </p:selectBooleanCheckbox>
-            <h:outputText value="politics: " />
-            <p:selectBooleanCheckbox value="#{userBean.topics.politics}">
-                <p:ajax update="msg" listener="#{userBean.addReaderTopicSubscription}" />
-            </p:selectBooleanCheckbox>
-            <h:outputText value="music: " />
-            <p:selectBooleanCheckbox value="#{userBean.topics.music}">
-                <p:ajax update="msg" listener="#{userBean.addReaderTopicSubscription}" />
-            </p:selectBooleanCheckbox>
-            <h:outputText value="film: " />
-            <p:selectBooleanCheckbox value="#{userBean.topics.film}">
-                <p:ajax update="msg" listener="#{userBean.addReaderTopicSubscription}" />
-            </p:selectBooleanCheckbox>
+        <h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5" id="newNewsTopics">
+            <h:outputText value="Topics:" />
+            <p:selectManyCheckbox id="topics" value="#{topicBean.newstopics}" layout="grid" columns="3" required="true">
+                <f:selectItems  value="#{newsBean.topics}" var="top" itemLabel="#{top}" itemValue="#{top}" />
+            </p:selectManyCheckbox>
         </h:panelGrid>
         <p:commandButton value="Submit" icon="ui-icon-check" update="display" oncomplete="PF('dlg').show()" />
         <p:dialog header="Values" modal="subscribed" resizable="unsubscribed" showEffect="fade" widgetVar="dlg">

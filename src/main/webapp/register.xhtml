@@ -17,6 +17,12 @@
                          requiredMessage="Wrong password  "/>&nbsp;
         <p:commandButton value="Singup as writer"  action="#{userBean.addWriter(userBean.username, userBean.password)}"
                          requiredMessage="Wrong password  "/><br/>
+        <h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5" id="newNewsTopics">
+            <h:outputText value="Topics:" />
+            <p:selectManyCheckbox id="topics" value="#{userBean .topics}" layout="grid" columns="3">
+                <f:selectItems  value="#{topicBean.newstopics}" var="top" itemLabel="#{top}" itemValue="#{top}" />
+            </p:selectManyCheckbox>
+        </h:panelGrid>
         readers:   <p:outputLabel value="#{userBean.readersListString}" /><br/>
         writers:   <p:outputLabel value="#{userBean.writersListString}" />
     </h:form>

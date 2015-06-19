@@ -1,31 +1,28 @@
-import javax.annotation.ManagedBean;
+import javax.faces.bean.ManagedBean;
 import javax.ejb.EJB;
 import javax.faces.bean.SessionScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
 
 /**
  * Created by wojte_000 on 6/18/2015.
  */
 
-@Named
+@ManagedBean
 @SessionScoped
 public class NewsBean {
     @EJB
     private UserRepo users;
-    @Inject
-    NewsRepo newsMap;
 
     private String title;
-    private String topic;
+    private ArrayList<String> topics;
     private String content;
-    public String newsString;
 
     public void addNews(){
-        if (this.content!=null && this.topic!=null && this.title!=null) {
-            users.publish(new News(this.title, this.content, this.topic));
-        }
+        News news = new News(this.title, this.content, this.topics);
+        users.publish(news);
     }
 
 
@@ -37,12 +34,12 @@ public class NewsBean {
         this.title = title;
     }
 
-    public String getTopic() {
-        return this.topic;
+    public ArrayList<String> getTopics() {
+        return this.topics;
     }
 
-    public void setTopic(String topic) {
-        this.topic = topic;
+    public void setTopics(ArrayList<String> topics) {
+        this.topics = topics;
     }
 
     public String getContent() {
@@ -52,23 +49,4 @@ public class NewsBean {
     public void setContent(String content) {
         this.content = content;
     }
-
-    public NewsRepo getNewsMap() {
-        return newsMap;
-    }
-
-    public void setNewsMap(NewsRepo newsMap) {
-        this.newsMap = newsMap;
-    }
-
-    public String getNewsString() {
-        return newsMap.getNewsMap().toString();
-    }
-
-    public void setNewsString(String newsString) {
-        this.newsString = newsString;
-    }
-
-
-
 }

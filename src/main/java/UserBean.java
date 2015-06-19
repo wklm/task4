@@ -6,6 +6,7 @@ import javax.faces.bean.ViewScoped;
 import javax.inject.Inject;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 @ManagedBean
@@ -30,9 +31,9 @@ public class UserBean {
     Integer currentReaderPaging;
     Integer newPaging;
     boolean loggedIn;
-    @Inject
-    TopicBean topics;
+    ArrayList<String> topics = new ArrayList<String>();
     Reader reader;
+
 
     public Integer getNewPaging() {
         return newPaging;
@@ -47,7 +48,11 @@ public class UserBean {
     public void addReader(String login, String pass) {
         if (users.getReaders().get(login) == null && users.getWriters().get(login) == null) {
             Reader r = new Reader(login, pass);
+            r.setTopics(this.topics);
             users.getReaders().put(login, r);
+            this.username = null;
+            this.password = null;
+            this.topics = new ArrayList<String>();
         } // else exception
     }
 
@@ -55,6 +60,9 @@ public class UserBean {
         if (users.getReaders().get(login) == null && users.getWriters().get(login) == null) {
             Writer w = new Writer(login, pass);
             users.getWriters().put(login, w);
+            this.username = null;
+            this.password = null;
+            this.topics = new ArrayList<String>();
         } // else exception
     }
 
@@ -114,15 +122,13 @@ public class UserBean {
         Topic t1 = new Topic("automotive");
         Topic t2 = new Topic("politics");
         Topic t3 = new Topic("music");
-        addReader(testReaderName, testPass);
-        users.getReaders().get(testReaderName).getSubscribedTopics().add(t1);
-        users.getReaders().get(testReaderName).getSubscribedTopics().add(t2);
-        users.getReaders().get(testReaderName).getSubscribedTopics().add(t3);
-        // v.2 : news provider
+//        addReader(testReaderName, testPass);
+//        users.getReaders().get(testReaderName).getSubscribedTopics().add(t1);
+//        users.getReaders().get(testReaderName).getSubscribedTopics().add(t2);
+//        users.getReaders().get(testReaderName).getSubscribedTopics().add(t3);
+//        // v.2 : news provider
         this.addWriter(testWriterName,testPass);
         // v.3 : subscribable items
-        News n1 = new News("title1", "topic1", "politics");
-        News n2 = new News("title2", "topic2", "automotive");
         users.getWriters().get(testReaderName).write("title1", "topic1");
         users.getWriters().get(testReaderName).write("title2", "topic2");
        // users.getWriters().get(testWriterName).registerObserver(users.getReaders().get(testReaderName));
@@ -249,20 +255,12 @@ public class UserBean {
         this.users.getReaders().get(getCurrentUserName()).setPaging(currentReaderPaging);
     }
 
-    public void addReaderTopicSubscription() {
 
-        topics.addMessage();
-
-
-
+    public ArrayList<String> getTopics() {
+        return this.topics;
     }
 
-
-    public TopicBean getTopics() {
-        return topics;
-    }
-
-    public void setTopics(TopicBean topics) {
+    public void setTopics(ArrayList<String> topics) {
         this.topics = topics;
     }
 

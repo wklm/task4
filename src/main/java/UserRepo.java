@@ -32,7 +32,9 @@ public class UserRepo {
         for(Reader r: readers.values()) { 
         //if newsreader contains all the newsreader topics
            //f (r.getTopics().));
-            r.newsList.add(n);
+            if(r.getTopics().containsAll(n.getTopics())) {
+                r.newsList.add(n);
+            }
         }
     }
 }
