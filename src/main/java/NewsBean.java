@@ -1,9 +1,6 @@
 import javax.faces.bean.ManagedBean;
 import javax.ejb.EJB;
 import javax.faces.bean.SessionScoped;
-import javax.inject.Inject;
-import javax.inject.Named;
-import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 
 /**
@@ -19,6 +16,8 @@ public class NewsBean {
     private String title;
     private ArrayList<String> topics;
     private String content;
+
+    private ArrayList<News> search = new ArrayList<>();
 
     public void addNews(){
         News news = new News(this.title, this.content, this.topics);
@@ -48,5 +47,13 @@ public class NewsBean {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public ArrayList<News> getSearch() {
+        return search;
+    }
+
+    public void setSearch(ArrayList<News> search) {
+        this.search = search;
     }
 }

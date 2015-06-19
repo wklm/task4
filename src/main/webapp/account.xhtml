@@ -8,9 +8,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 </head>
 <h:body>
-    <p:outputLabel value="welcome " style="font-size: 400%"></p:outputLabel>
-    <p:outputLabel value="#{userBean.currentUserName}" style="font-size: 400%"></p:outputLabel><br/>
-    <p:outputLabel value="choose topics:" style="font-size: 150%"></p:outputLabel>
+    <h:form>
+        <h:commandButton action="index?faces-redirect=true" value="back" />
+    </h:form>
 
     <h:form>
         <p:growl id="msg" />
@@ -20,22 +20,13 @@
                 <f:selectItems  value="#{newsBean.topics}" var="top" itemLabel="#{top}" itemValue="#{top}" />
             </p:selectManyCheckbox>
         </h:panelGrid>
-        <p:commandButton value="Submit" icon="ui-icon-check" update="display" oncomplete="PF('dlg').show()" />
-        <p:dialog header="Values" modal="subscribed" resizable="unsubscribed" showEffect="fade" widgetVar="dlg">
-            <h:panelGrid columns="1" id="display">
-                <h:outputText value="sport: #{userBean.topics.sport}" />
-                <h:outputText value="automotive: #{userBean.topics.automotive}" />
-                <h:outputText value="politics: #{userBean.topics.politics}" />
-                <h:outputText value="music: #{userBean.topics.music}" />
-                <h:outputText value="film: #{userBean.topics.film}" />
-            </h:panelGrid>
-        </p:dialog>
+        <p:selectManyCheckbox id="toopics" value="#{newsBean.topics}" layout="grid" columns="3" required="true">
+            <f:selectItems  value="#{topicBean.newstopics}" var="top" itemLabel="#{top}" itemValue="#{top}" />
+        </p:selectManyCheckbox>
     </h:form>
-    <h:form>
-        <h:commandButton action="index?faces-redirect=true" value="logout" />
-    </h:form>
+
     <h1>Change Password</h1>
-    <h:outputText value="haselko: #{userBean.password}" />
+    <h:outputText value="password: #{userBean.password}" />
 
     <h:form>
         <h:panelGrid columns="4" cellpadding="5">

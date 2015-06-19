@@ -17,13 +17,6 @@ public class Writer implements User {
     String topic;
     String content;
 
-   public void wirte() {
-        //news.addNews(getTopic(),getContent());
-    }
-
-    public void write(String title, String content) {
-        //news.addNews(title,topic);
-    }
 
     public Writer(String login, String pass) {
         this.account = new Account(login,pass);

@@ -20,12 +20,14 @@ public class News {
 
 
 
+
     ArrayList<String> topics = new ArrayList<String>();
 
     public News(String title, String content, ArrayList<String> topics) {
         this.title = title;
         this.content = content;
         this.topics = topics;
+        this.read = false;
     }
 
     public String getContent() {
@@ -75,4 +77,32 @@ public class News {
     public void setTopics(ArrayList<String> topics) {
         this.topics = topics;
     }
+
+    public boolean isRead() {
+        return read;
+    }
+
+    public void makeRead() {
+        this.read = !read;
+    }
+
+    public void setRead(boolean read) {
+        this.read = read;
+    }
+
+    public String getNewTag() {
+        return newTag;
+    }
+
+    public void setNewTag(String newTag) {
+        this.newTag = newTag;
+    }
+
+    public String newTag;
+
+   public  void addtag(String tag) {
+        if (!tag.isEmpty())this.tags.add(newTag);
+    }
+
+
 }

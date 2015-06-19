@@ -28,11 +28,12 @@ public class UserBean {
     String currentUserName;
     String oldPass;
     String newPass;
-    Integer currentReaderPaging;
     Integer newPaging;
     boolean loggedIn;
     ArrayList<String> topics = new ArrayList<String>();
     Reader reader;
+    NewsBean nb1;
+    NewsBean nb2;
 
 
     public Integer getNewPaging() {
@@ -119,19 +120,24 @@ public class UserBean {
         String testWriterName = "testwriter";
         String testPass = "A1test";
         // v.1 : reader + topics
-        Topic t1 = new Topic("automotive");
-        Topic t2 = new Topic("politics");
-        Topic t3 = new Topic("music");
-//        addReader(testReaderName, testPass);
-//        users.getReaders().get(testReaderName).getSubscribedTopics().add(t1);
-//        users.getReaders().get(testReaderName).getSubscribedTopics().add(t2);
-//        users.getReaders().get(testReaderName).getSubscribedTopics().add(t3);
-//        // v.2 : news provider
+        addReader(testReaderName, testPass);
+        users.getReaders().get(testReaderName).getTopics().add("sports");
+        users.getReaders().get(testReaderName).getTopics().add("health");
+        users.getReaders().get(testReaderName).getTopics().add("technology");
+
+        // v.2 : news provider
         this.addWriter(testWriterName,testPass);
+
         // v.3 : subscribable items
-        users.getWriters().get(testReaderName).write("title1", "topic1");
-        users.getWriters().get(testReaderName).write("title2", "topic2");
-       // users.getWriters().get(testWriterName).registerObserver(users.getReaders().get(testReaderName));
+        ArrayList<String> topics1 = new ArrayList<>();
+        topics1.add("health");
+        topics1.add("sports");
+        News n1 = new News("title1", "content1", topics1);
+        ArrayList<String> topics2 = new ArrayList<>();
+        topics2.add("technology");
+        News n2 = new News("title2", "content2", topics2);
+        users.publish(n1);
+        users.publish(n2);
 
         return "index";
     }

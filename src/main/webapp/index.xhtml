@@ -8,8 +8,7 @@
 <h:head></h:head>
 
 <h:body>
-    <h:outputText value="#{userBean.logedasReader}" />
-    <h:form>
+    <h:form rendered="#{userBean.loggedIn}">
     <h:commandButton value="Logout" action="#{userBean.logout}"/>
     </h:form>
 
@@ -38,7 +37,7 @@
                          id="newsfeedTable"
                          var="newsItem"
                          widgetVar="newsItemTable"
-                         emptyMessage="Keine News"
+                         emptyMessage="no News to show :("
                          paginator="true"
                          rows="#{userBean.currentReaderPaging}">
 
@@ -54,21 +53,21 @@
                 <p:column headerText="Date" sortBy="#{news.date}">
                     <h:outputText value="#{newsItem.date}"/>
                 </p:column>
-                <!--<p:column headerText="Read" sortBy="#{newsItem.getRead}">-->
-                    <!--<h:outputText value="#{newsItem.getRead}"/>-->
-                    <!--<h:commandButton value="(un)read" update="@form" process="@form" ajax="true"-->
-                                     <!--action="#{newsBean.addRead(newsItem.name)}"/>-->
-                <!--</p:column>-->
+                <p:column headerText="Read" sortBy="#{newsItem.read}">
+                    <h:outputText value="#{newsItem.read}"/>
+                    <h:commandButton value="(un)read" update="@form" process="@form" ajax="true"
+                                     action="#{newsItem.makeRead}"/>
+                </p:column>
                 <p:column filterBy="#{newsItem.topics}"  headerText="Topics" filterMatchMode="contains">
                     <h:outputText value="#{newsItem.topics}"/>
                 </p:column>
-                <!--<p:column filterBy="#{newsItem.tags}" headerText="Tags" filterMatchMode="contains" >-->
-                    <!--<h:outputText value="#{newsItem.tags}"/>-->
-                <!--</p:column>-->
+                <p:column filterBy="#{newsItem.tags}" headerText="Tags" filterMatchMode="contains" >
+                    <h:outputText value="#{newsItem.tags}"/>
+                </p:column>
                 <p:column>
-                    <!--<h:inputText binding="#{newTag}" id="newTag"/>-->
-                    <!--<h:commandButton value="Add New Tag to News" update="@form" process="@form" ajax="true"-->
-                                     <!--action="#{newsController.addTagToNews(newsItem.name, newTag.value)}"/>-->
+                    <h:inputText value="#{newsItem.newTag}" id="newTag"/>
+                    <h:commandButton value="Add tag" update="@form" process="@form" ajax="true"
+                                     action="#{newsItem.addtag(newsItem.newTag)}"/>
                 </p:column>
             </p:dataTable>
         </h:form>
