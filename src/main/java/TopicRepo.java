@@ -11,6 +11,8 @@ import java.util.HashMap;
 @Startup
 @Singleton
 public class TopicRepo {
+
+
     public Topic getSport() {
         return sport;
     }
@@ -51,7 +53,7 @@ public class TopicRepo {
         this.film = film;
     }
 
-    public HashMap<String, Topic> getTopics() {
+    public ArrayList<String> getTopics() {
         return topics;
     }
 
@@ -61,11 +63,22 @@ public class TopicRepo {
     Topic music = new Topic("music");
     Topic film = new Topic("film");
 
-    public void setTopics(HashMap<String, Topic> topics) {
+    @PostConstruct
+    void init() {
+        topics.add("sport");
+        topics.add("automotive");
+        topics.add("politics");
+        topics.add("automotive");
+        topics.add("music");
+        topics.add("film");
+    }
+
+    public void setTopics(ArrayList<String> topics) {
         this.topics = topics;
     }
 
-    HashMap<String, Topic> topics= new HashMap<>();
+    ArrayList<String> topics= new ArrayList<String>();
+
 
 
 }

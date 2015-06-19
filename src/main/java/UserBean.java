@@ -1,3 +1,4 @@
+import javax.ejb.EJB;
 import javax.ejb.Stateful;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
@@ -11,9 +12,8 @@ import java.util.HashMap;
 @SessionScoped
 public class UserBean {
 
-    @Inject
-    UserRepo users;
-
+    @EJB
+    private UserRepo users;
     @NotNull
     String username;
     @NotNull
@@ -32,7 +32,7 @@ public class UserBean {
     boolean loggedIn;
     @Inject
     TopicBean topics;
-
+    Reader reader;
 
     public Integer getNewPaging() {
         return newPaging;
@@ -65,6 +65,7 @@ public class UserBean {
         }
         if (users.getReaders().get(username) != null && users.getReaders().get(username).getAccount().getPassword().equals(password)) {
             currentUser = users.getReaders().get(username);
+            reader = (Reader) currentUser;
             return "index";
         } else return "failure";
     }
@@ -129,8 +130,8 @@ public class UserBean {
         return "index";
     }
 
-    public void changePaging(int i) {
-
+    public void changePaging() {
+        setCurrentReaderPaging(getNewPaging());
     }
     public boolean isLoggedIn() {
         return currentUser != null;
@@ -248,6 +249,14 @@ public class UserBean {
         this.users.getReaders().get(getCurrentUserName()).setPaging(currentReaderPaging);
     }
 
+    public void addReaderTopicSubscription() {
+
+        topics.addMessage();
+
+
+
+    }
+
 
     public TopicBean getTopics() {
         return topics;
@@ -257,4 +266,11 @@ public class UserBean {
         this.topics = topics;
     }
 
+    public Reader getReader() {
+        return reader;
+    }
+
+    public void setReader(Reader reader) {
+        this.reader = reader;
+    }
 }

@@ -1,4 +1,5 @@
 import javax.annotation.ManagedBean;
+import javax.ejb.EJB;
 import javax.faces.bean.SessionScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -11,33 +12,25 @@ import javax.validation.constraints.NotNull;
 @Named
 @SessionScoped
 public class NewsBean {
-
+    @EJB
+    private UserRepo users;
     @Inject
     NewsRepo newsMap;
 
-    @NotNull String title;
-    @NotNull String topic;
-    @NotNull String content;
+    private String title;
+    private String topic;
+    private String content;
     public String newsString;
-    News news = new News();
-
-    public News getNews() {
-        return news;
-    }
-
-    public void setNews(News news) {
-        this.news = news;
-    }
 
     public void addNews(){
-
-        newsMap.getNewsMap().put(newsMap.getIndex(), news);
-        newsMap.setIndex(newsMap.getIndex()+1);
+        if (this.content!=null && this.topic!=null && this.title!=null) {
+            users.publish(new News(this.title, this.content, this.topic));
+        }
     }
 
 
     public String getTitle() {
-        return title;
+        return this.title;
     }
 
     public void setTitle(String title) {
@@ -45,7 +38,7 @@ public class NewsBean {
     }
 
     public String getTopic() {
-        return topic;
+        return this.topic;
     }
 
     public void setTopic(String topic) {
@@ -53,7 +46,7 @@ public class NewsBean {
     }
 
     public String getContent() {
-        return content;
+        return this.content;
     }
 
     public void setContent(String content) {

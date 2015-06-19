@@ -1,5 +1,6 @@
 import javax.ejb.Singleton;
 import javax.ejb.Startup;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -27,6 +28,11 @@ public class UserRepo {
 
     HashMap<String, Reader> readers = new HashMap<>();
     HashMap<String, Writer> writers = new HashMap<>();
-
-
+    public void publish(News n) {
+        for(Reader r: readers.values()) { 
+        //if newsreader contains all the newsreader topics
+           //f (r.getTopics().));
+            r.newsList.add(n);
+        }
+    }
 }

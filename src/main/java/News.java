@@ -17,12 +17,15 @@ public class News {
     ArrayList<String> tags = new ArrayList<String>();
     Boolean read = false;
     Date date = new Date();
-    String topic = new String();
 
-    public News(String title, String content, String topic) {
+
+
+    ArrayList<String> topics = new ArrayList<String>();
+
+    public News(String title, String content, ArrayList<String> topics) {
         this.title = title;
         this.content = content;
-        this.topic = topic;
+        this.topics = topics;
     }
 
     public String getContent() {
@@ -48,13 +51,6 @@ public class News {
         this.tags = tags;
     }
 
-    public String getTopic() {
-        return topic;
-    }
-
-    public void setTopic(String topic) {
-        this.topic = topic;
-    }
 
     public Date getDate() {
         return date;
@@ -72,7 +68,11 @@ public class News {
         this.read = read;
     }
 
+    public ArrayList<String> getTopics() {
+        return topics;
+    }
 
-
-    public News() {}
+    public void setTopics(ArrayList<String> topics) {
+        this.topics = topics;
+    }
 }

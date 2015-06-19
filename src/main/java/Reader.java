@@ -11,22 +11,15 @@ import java.util.Observer;
 
 @ViewScoped
 @ManagedBean(name="reader")
-public class Reader implements Observer, Serializable, User {
+
+public class Reader implements Serializable, User {
     Account account;
     Reader(String login, String password) {
         this.account = new Account(login, password);
     }
     ArrayList<News> newsList = new ArrayList<>();
-    TopicBean topics;
-    ArrayList<Topic> subscribedTopics = new ArrayList<>();
-
-    @Override
-    public void update(Observable o, Object news) {
-        News n = (News)news;
-        for (Topic t : getSubscribedTopics())
-            if (t.equals(n.getTopic()))
-                newsList.add(n);
-    }
+    ArrayList<String> topics = new ArrayList<String>();
+    Integer paging;
 
     public Account getAccount() {
         return account;
@@ -34,27 +27,20 @@ public class Reader implements Observer, Serializable, User {
     public void setAccount(Account account) {
         this.account = account;
     }
+
     public ArrayList<News> getNewsList() {
         return newsList;
     }
     public void setNewsList(ArrayList<News> newsList) {
         this.newsList = newsList;
     }
-    public TopicBean getTopics() {
+
+    public ArrayList<String> getTopics() {
         return topics;
     }
 
-    public void setTopics(TopicBean topics) {
+    public void setTopics(ArrayList<String> topics) {
         this.topics = topics;
-    }
-
-
-    public ArrayList<Topic> getSubscribedTopics() {
-        return subscribedTopics;
-    }
-
-    public void setSubscribedTopics(ArrayList<Topic> subscribedTopics) {
-        this.subscribedTopics = subscribedTopics;
     }
 
     public Integer getPaging() {
@@ -64,8 +50,4 @@ public class Reader implements Observer, Serializable, User {
     public void setPaging(Integer paging) {
         this.paging = paging;
     }
-
-    Integer paging;
-
-
 }

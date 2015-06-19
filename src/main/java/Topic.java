@@ -10,22 +10,8 @@ import java.util.Observer;
 @ViewScoped
 @ManagedBean(name="topic")
 public class Topic extends Observable {
-    private ArrayList<News> articles = new ArrayList<News>();
-    private ArrayList<Observer> observers = new ArrayList<Observer>();
-    String name;
 
-    public void notifyObservers(Observable observable, News news) {
-        for (Observer ob : observers) {
-            ob.update(observable, news);
-        }
-    }
-    public void publish(News news) {
-        articles.add(news);
-        notifyObservers(this, news);
-    }
-    public void registerObserver(Observer observer) {
-        observers.add(observer);
-    }
+    String name;
     public Topic(String name) {
         this.name = name;
     }
@@ -36,5 +22,4 @@ public class Topic extends Observable {
     public void setName(String name) {
         this.name = name;
     }
-
 }
